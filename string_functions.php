@@ -55,8 +55,27 @@
 
   # is_string()
   # Check if string
-  $val = "Hello";
-  $output = is_string($val);
+  // $val = "Hello";
+  // $output = is_string($val);
 
-  echo $output;
+  // echo $output;
+
+  // $values = array(true, false, null, "abc", 33, "33", 22.4, "22.4", "", " ", 0, "0");
+
+  // foreach($values as $value) {
+  //   if(is_string($value)) {
+  //     echo "{$value} is a string <br>";
+  //   }
+  // }
+
+  # gzcompress()
+  # compress a string
+  $string = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni autem quia dolore iusto labore quis sint libero soluta, repudiandae aut maiores dolor culpa incidunt deserunt quaerat aliquam voluptate inventore magnam sit perferendis nam, quas at! In rerum hic maiores consequatur quod quo reiciendis, ab illo dolorem labore, autem animi explicabo.";
+
+  // $compressed = gzcompress($string);
+  // echo $compressed;
+
+  $original = gzuncompress($compressed);
+  echo $original;
+
 ?>
